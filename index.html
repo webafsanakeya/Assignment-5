@@ -1,11 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <!-- navbar starts -->
+    <div class="flex justify-center items-center h-[100px] bg-gray-100">
+        <div class="flex justify-between items-center h-[80px] w-[1400px] bg-white rounded-2xl shadow-lg p-4">
+
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 flex items-center justify-center font-bold">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <span class="text-gray-800 text-2xl font-medium">Dev</span>
+                <span class="text-black text-2xl font-bold">Board</span>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center bg-gray-100 rounded-full px-4 py-1 shadow-sm">
+                    <div class="flex items-center justify-center">
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <span class="ml-2 text-black text-2xl font-semibold">23</span>
+                </div>
+
+                <button class="bg-gray-100 rounded-full px-2 py-2 flex items-center justify-center shadow-md">
+                    <img src="assets/theme-btn.png" alt="">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- card section starts -->
+    <section class="mt-5 flex bg-white">
+        <div class="col-left w-[1146px] h-[918px] bg-[#fff] shadow-lg">
+            <div class="row-1">
+                <div class="card-box-up grid grid-cols-3 gap-1">
+
+                    <div
+                        class="card-1 card-side bg-base-100 shadow-sm flex items-center justify-center w-[250px] h-[110px] bg-[#F4F7FF] ml-20">
+                        <button class="base-100 rounded-full px-2 py-2 shadow-md btn btn-circle ml-5">
+                            <img src="assets/checkbox.png" alt="">
+                        </button>
+                        <div class="card-body">
+                            <h2 class="card-title">Task Assigned</h2>
+                            <p>05</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card-2 card-side bg-base-100 shadow-sm flex items-center justify-center w-[450px] h-[110px] bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-8 rounded-lg text-white mr-20">
+                        <button class="bg-gray-100 px-2 py-2 shadow-md  ml-5 w-[79px] h-[79px]">
+                            <img src="assets/board.png" alt="">
+                        </button>
+                        <div class="card-body">
+                            <h2 class="card-title">Discover Something <br>New Today!</h2>
+                        </div>
+                    </div>
+                    <div
+                        class="card-3 card-side bg-base-100 shadow-sm flex items-center justify-center w-[250px] h-[110px] bg-[#F4F7FF] ml-20">
+                        <button class="base-100 rounded-full px-2 py-2 shadow-md btn btn-circle ml-5">
+                            <img src="assets/calender.png" alt="">
+                        </button>
+                        <div class="card-body">
+                            <h2 class="card-title">Wed,</h2>
+                            <p>Jul 28 2025 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- divider added -->
+                <div class="my-8">
+                    <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+                </div>
+                <!-- bottom card starts -->
+                <div class="card-box-bottom grid grid-cols-3 gap-y-3 bg-white mr-3">
+                    <div class="card card-border bg-gray-100 w-90 ml-3">
+                        <div class="card-body">
+                            <button
+                                class="btn btn-active bg-white text-[#00303C] rounded-lg w-[122px] h-[40px]">ShopEase</button>
+                            <h2 class="card-title">Fix Mobile Button Issue </h2>
+                            <button class="btn btn-active bg-white text-[#00303C] line-clamp-2 w-[243px] h-[60px]">Debug
+                                using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                                properly</button>
+                            <div>
+                                <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+                            </div>
+                            <div class="flex gap-10">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions px-4">
+                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="card card-border bg-gray-100 w-90 ml-3">
+                        <div class="card-body">
+                            <button
+                                class="btn btn-active bg-white text-[#00303C] rounded-lg w-[122px] h-[40px]">CloudSync</button>
+                            <h2 class="card-title">Add Dark Mode</h2>
+                            <button class="btn btn-active bg-white text-[#00303C] line-clamp-2 w-[243px] h-[60px]">Store
+                                the user's preference in localStorage, update CSS variables dynamically, and apply a
+                                smooth transition effect.</button>
+                            <div>
+                                <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+                            </div>
+                            <div class="flex gap-10">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions px-4">
+                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card card-border bg-gray-100 w-90 ml-3">
+                        <div class="card-body">
+                            <button
+                                class="btn btn-active bg-white text-[#00303C] rounded-lg w-[122px] h-[40px]">SwiftPay</button>
+                            <h2 class="card-title">Optimize Home page </h2>
+                            <button class="btn btn-active bg-white text-[#00303C] line-clamp-2 w-[243px] h-[60px]">Debug
+                                using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                                properly</button>
+                            <div>
+                                <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+                            </div>
+                            <div class="flex gap-10">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions px-4">
+                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card card-border bg-gray-100 w-90 ml-3">
+                        <div class="card-body">
+                            <button
+                                class="btn btn-active bg-white text-[#00303C] rounded-lg w-[122px] h-[40px]">Meta</button>
+                            <h2 class="card-title">Add new emoji 🤲</h2>
+                            <button class="btn btn-active bg-white text-[#00303C] line-clamp-2 w-[243px] h-[60px]">Debug
+                                using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                                properly</button>
+                            <div>
+                                <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+                            </div>
+                            <div class="flex gap-10">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions px-4">
+                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card card-border bg-gray-100 w-90 ml-3">
+                        <div class="card-body">
+                            <button
+                                class="btn btn-active bg-white text-[#00303C] rounded-lg w-[122px] h-[40px]">Google LLC</button>
+                            <h2 class="card-title">Integrate OpenAI API </h2>
+                            <button class="btn btn-active bg-white text-[#00303C] line-clamp-2 w-[243px] h-[60px]">Debug
+                                using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                                properly</button>
+                            <div>
+                                <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+                            </div>
+                            <div class="flex gap-10">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions px-4">
+                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card card-border bg-gray-100 w-90 ml-3">
+                        <div class="card-body">
+                            <button
+                                class="btn btn-active bg-white text-[#00303C] rounded-lg w-[122px] h-[40px]">Glassdoar</button>
+                            <h2 class="card-title">Improve Job searching </h2>
+                            <button class="btn btn-active bg-white text-[#00303C] line-clamp-2 w-[243px] h-[60px]">Debug
+                                using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                                properly</button>
+                            <div>
+                                <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+                            </div>
+                            <div class="flex gap-10">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions px-4">
+                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row-2"></div>
+        </div>
+        <!-- right column starts -->
+        <div class="col-right w-[366px] h-[918px] bg-[#fff] shadow-lg rounded-lg">
+            <div class="activity flex justify-center">
+                <div class="px-2 py-2">
+                    <img src="assets/activity.png" alt="">
+
+                </div>
+                <div class="px-2 py-2">
+                    <p>Activity Log</p>
+                </div>
+            </div>
+            <div class="items-center text-center mt-5">
+                <button class="btn btn-active btn-primary">Clear History</button>
+            </div>
+            <div>
+                <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
+            </div>
+            <div class="card card-border bg-[#F4F7FF] w-[318px] h-[68px] my-5 ml-5">
+                <div class="card-body px-2 py-2">
+                    <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                </div>
+            </div>
+            <div class="card card-border bg-[#F4F7FF] w-[318px] h-[68px] ml-5">
+                <div class="card-body px-2 py-2">
+                    <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
 </body>
+
 </html>
