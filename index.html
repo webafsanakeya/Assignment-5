@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body id="body">
     <!-- navbar starts -->
     <div class="flex justify-center items-center h-[100px] bg-gray-100">
         <div class="flex justify-between items-center h-[80px] w-[1400px] bg-white rounded-2xl shadow-lg p-4">
@@ -30,7 +30,7 @@
                     <span id="nav-number" class="ml-2 text-black text-2xl font-bold">23</span>
                 </div>
 
-                <button class="bg-gray-100 rounded-full px-2 py-2 flex items-center justify-center shadow-md">
+                <button id="color-btn" class="bg-gray-100 rounded-full px-2 py-2 flex items-center justify-center shadow-md">
                     <img src="assets/theme-btn.png" alt="">
                 </button>
             </div>
@@ -69,8 +69,8 @@
                             <img src="assets/calender.png" alt="">
                         </button>
                         <div class="card-body">
-                            <h2 class="card-title">Wed,</h2>
-                            <p>Jul 28 2025 </p>
+                            <h2 class="card-title">Current Date:</h2>
+                            <p id="current-date"></p>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                                     <p>21 March 2025</p>
                                 </div>
                                 <div class="card-actions px-4">
-                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                    <button id="dark-mode-btn" class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
                                 </div>
                             </div>
 
@@ -146,7 +146,7 @@
                                     <p>21 March 2025</p>
                                 </div>
                                 <div class="card-actions px-4">
-                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                    <button id="complete-btn" class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
                                 </div>
                             </div>
 
@@ -169,7 +169,7 @@
                                     <p>21 March 2025</p>
                                 </div>
                                 <div class="card-actions px-4">
-                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                    <button id="complete-btn" class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
                                 </div>
                             </div>
 
@@ -192,7 +192,7 @@
                                     <p>21 March 2025</p>
                                 </div>
                                 <div class="card-actions px-4">
-                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                    <button id="complete-btn" class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
                                 </div>
                             </div>
 
@@ -215,7 +215,7 @@
                                     <p>21 March 2025</p>
                                 </div>
                                 <div class="card-actions px-4">
-                                    <button class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
+                                    <button id="complete-btn" class="btn bg-[#3752FD] w-[135px] h-[44px] text-white rounded-lg">Completed</button>
                                 </div>
                             </div>
 
@@ -238,19 +238,19 @@
                 </div>
             </div>
             <div class="items-center text-center mt-5">
-                <button class="btn btn-active btn-primary">Clear History</button>
+                <button id="history-message-btn" class="btn btn-active btn-primary">Clear History</button>
             </div>
             <div>
                 <hr class="my-4 mx-2 border-t-2 border-dotted border-gray-400" />
             </div>
-            <div class="card card-border bg-[#F4F7FF] w-[318px] h-[68px] my-5 ml-5">
+            <div id="mobile-message-box" class="card card-border bg-[#F4F7FF] w-[318px] h-[68px] my-5 ml-5 hidden">
                 <div class="card-body px-2 py-2">
-                    <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                    <p>You have Complete The Task Fix Mobile Button Issue at <span id="time"></span></p>
                 </div>
             </div>
-            <div class="card card-border bg-[#F4F7FF] w-[318px] h-[68px] ml-5">
+            <div id="dark-message-box" class="card card-border bg-[#F4F7FF] w-[318px] h-[68px] my-5 ml-5 hidden">
                 <div class="card-body px-2 py-2">
-                    <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                    <p>You have Complete The Add Dark Mode at <span id="time"></span></p>
                 </div>
             </div>
 
@@ -262,6 +262,10 @@
 
 <script src="./script/completed.js"></script>
 <script src="./script/mobile-btn.js"></script>
+<script src="./script/dark-mode.js"></script>
+<script src="./script/homepage-btn.js"></script>
+<script src="./script/color-btn.js"></script>
+<script src="./script/date.js"></script>
 </body>
 
 </html>
